@@ -1,9 +1,15 @@
 import wandb
+import json
 
-project = "test"
-name = "ncrxtvbj"
 
-"""Use wandb to restore a file from a previous run"""
-best_model = wandb.restore("hello.txt", run_path=f"jibrilfrej/{project}/{name}")
+def main():
+    config = json.load(open("config.json"))
+    file = wandb.restore(
+        config["file"],
+        run_path=f"{config['profile']}/{config['project']}/{config['name']}",
+    )
+    print(file.read())
 
-print(best_model.read())
+
+if __name__ == "__main__":
+    main()

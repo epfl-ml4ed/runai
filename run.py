@@ -1,13 +1,22 @@
 import wandb
+import json
 
-project = "test"
-name = "hello world"
 
-wandb.init(project=project, name=name)
+def write_hello(config):
+    wandb.init(project=config["project"], name=config["name"])
 
-with open("hello.txt", "w") as hello_file:
-    hello_file.write("Hello World")
+    with open(config["file"], "w") as hello_file:
+        hello_file.write("Hello World")
 
-wandb.save("hello.txt")
+    wandb.save(config["file"])
 
-wandb.finish()
+    wandb.finish()
+
+
+def main():
+    config = json.load(open("config.json"))
+    write_hello(config)
+
+
+if __name__ == "__main__":
+    main()
