@@ -1,0 +1,14 @@
+# Ignore markdown files
+*.md
+
+# Ignore git directories and files
+.git/
+.gitignore
+README.md
+LICENSE
+
+# Ignore all files in the wandb directory
+wandb/
+
+# Ignore hello.txt
+hello.txt

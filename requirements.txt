@@ -1,0 +1,32 @@
+appdirs @ file:///home/conda/feedstock_root/build_artifacts/appdirs_1603108395799/work
+black @ file:///opt/conda/conda-bld/black_1660237809219/work
+brotlipy @ file:///home/conda/feedstock_root/build_artifacts/brotlipy_1648854164373/work
+certifi @ file:///croot/certifi_1671487769961/work/certifi
+cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_1636046055389/work
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1678108872112/work
+click @ file:///home/conda/feedstock_root/build_artifacts/click_1666798198223/work
+cryptography @ file:///home/conda/feedstock_root/build_artifacts/cryptography_1637687020823/work
+docker-pycreds==0.4.0
+gitdb @ file:///home/conda/feedstock_root/build_artifacts/gitdb_1669279893622/work
+GitPython @ file:///home/conda/feedstock_root/build_artifacts/gitpython_1676637751542/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
+mypy-extensions==0.4.3
+nltk==3.7
+pathspec @ file:///croot/pathspec_1674681560568/work
+pathtools==0.1.2
+platformdirs @ file:///opt/conda/conda-bld/platformdirs_1662711380096/work
+protobuf==3.20.3
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1608055815057/work
+PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
+PyYAML @ file:///home/conda/feedstock_root/build_artifacts/pyyaml_1648757097602/work
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1680286922386/work
+sentry-sdk @ file:///home/conda/feedstock_root/build_artifacts/sentry-sdk_1680013475880/work
+setproctitle @ file:///home/conda/feedstock_root/build_artifacts/setproctitle_1649637314806/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+smmap @ file:///home/conda/feedstock_root/build_artifacts/smmap_1611376390914/work
+tomli @ file:///opt/conda/conda-bld/tomli_1657175507142/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1678559861143/work
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1678635778344/work
+wandb @ file:///home/conda/feedstock_root/build_artifacts/wandb_1678843302744/work
