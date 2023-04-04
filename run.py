@@ -3,7 +3,7 @@ import json
 
 
 def write_hello(config):
-    wandb.init(project=config["project"], name=config["name"])
+    wandb.init(project=config["project"], name=config["run_name"])
 
     with open(config["file"], "w") as hello_file:
         hello_file.write("Hello World")

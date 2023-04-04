@@ -1,6 +1,7 @@
 {
     "profile": "jibrilfrej",
-    "project": "dockertest",
-    "name": "ncrxtvbj",
+    "project": "test",
+    "run_name": "docker",
+    "run_id": "ncrxtvbj",
     "file": "hello.txt"
 }
