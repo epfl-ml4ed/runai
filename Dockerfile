@@ -4,14 +4,13 @@ RUN apt update
 
 COPY . /
 
+RUN chmod u+x entrypoint.sh
+
 # Create the environment:
 RUN conda env create -f environment.yml
 
 # Make RUN commands use the new environment:
-SHELL ["conda", "run", "-n", "runai", "/bin/bash", "-c"]
+RUN echo "conda activate runai" >> ~/.bashrc
+SHELL ["/bin/bash", "--login", "-c"]
 
-# Demonstrate the environment is activated:
-RUN echo "Make sure wandb is installed:"
-RUN python -c "import wandb"
-
-ENTRYPOINT ["conda", "run", "-n", "runai", "python", "run.py"]
+ENTRYPOINT ["./entrypoint.sh"]
