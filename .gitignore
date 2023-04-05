@@ -3,3 +3,6 @@ hello.txt
 
 # Ignore wandb directory
 wandb/
+
+# Ignore docker environment variables
+.env

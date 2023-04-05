@@ -8,7 +8,7 @@ Pricing can be found here: https://icitdocs.epfl.ch/display/clusterdocs/Pricing
 Requirements for this minimal working example:
 - wandb for tracking experiments: https://wandb.ai/ (you must be logged in)
 
-Before running the minimal example with Docker and wandb: **change the config file** with your profile
+Before running the minimal example with Docker and wandb: **change the config file** and the dockerfile ENV varaibles with your profile (this solution is not very secure yet, since you need to put your APIKEY in your dockerfile, I'll find sonmething better later)
 
 Build the docker image with name wandb and tag 1.0:
 ```bash
@@ -59,4 +59,15 @@ Login to the ic-registry
 
 ```bash
 docker login ic-registry.epfl.ch
+```
+
+Tag your image to the ic-registry
+
+```bash
+docker tag wandb:1.0 ic-registry.epfl.ch/d-vet/wandb:1.0
+```
+
+Push your image to the ic-registry
+```bash
+docker push ic-registry.epfl.ch/d-vet/wandb:1.0
 ```

@@ -2,6 +2,9 @@ FROM continuumio/anaconda3
 
 RUN apt update
 
+ENV WANDB_ENTITY=YOURPROFILE 
+ENV WANDB_API_KEY=YOURKEY
+
 COPY . /
 
 RUN chmod u+x entrypoint.sh
