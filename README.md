@@ -7,7 +7,7 @@ Pricing can be found here: https://icitdocs.epfl.ch/display/clusterdocs/Pricing
 
 Requirements for this minimal working example:
 - wandb for tracking experiments: https://wandb.ai/ (you must be logged in)
-- conda ()
+- conda (https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
 
 
 
@@ -15,7 +15,7 @@ Before running the minimal example with Docker and wandb: **change the config fi
 
 Build the docker image with name wandb and tag 1.0:
 ```bash
-docker build -t wandb:1.0
+docker build -t wandb:1.0 .
 ```
 
 Note for WSL2 users: if you encounter issues when building the docker image such as HTTPS 000 errors, try restarting you computer (restarting wsl only did not work for me)
