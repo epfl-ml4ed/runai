@@ -7,6 +7,9 @@ Pricing can be found here: https://icitdocs.epfl.ch/display/clusterdocs/Pricing
 
 Requirements for this minimal working example:
 - wandb for tracking experiments: https://wandb.ai/ (you must be logged in)
+- conda ()
+
+
 
 Before running the minimal example with Docker and wandb: **change the config file** and the dockerfile ENV varaibles with your profile (this solution is not very secure yet, since you need to put your APIKEY in your dockerfile, I'll find sonmething better later)
 
@@ -71,3 +74,13 @@ Push your image to the ic-registry
 ```bash
 docker push ic-registry.epfl.ch/d-vet/wandb:1.0
 ```
+
+Run your image
+```bash
+runai submit --name test1 -i ic-registry.epfl.ch/d-vet/wandb:1.0 --cpu-limit 1 --gpu 0 -e RUN=new
+```
+
+Once again,If everything went well:
+- a wandb project named test has been created
+- a run named docker has been created in the test project
+- a file named hello.txt containing Hello World has been saved in your run  
